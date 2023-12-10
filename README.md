@@ -1,7 +1,7 @@
 # sistema web JumboETL(*extract, transform, load*).
  ![](https://i.imgur.com/GVAU8Y1.png)
 
-# Tecnologias.
+# Tecnologias aplicadas.
 ![](https://i.imgur.com/bNRJEIt.png)
 
 # Desafio.
