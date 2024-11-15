@@ -50,7 +50,6 @@ export default function Login() {
                 Alert.error(`Não foi possível conectar`);
             }
         }
-
     }
 
     useEffect(() => {
@@ -99,7 +98,6 @@ export default function Login() {
                         </div>
                     </form>
                 </section>
-
             </div>
         </div>
     );
