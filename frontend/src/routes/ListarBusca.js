@@ -80,6 +80,7 @@ export default function ListarBusca() {
               </tbody>
             </table>
           </div>
+
           <div className='container-list-table'>
             <table>
               <tbody>
@@ -99,8 +100,4 @@ export default function ListarBusca() {
     </div>
   );
 }
-
-
-
-
 
