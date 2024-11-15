@@ -6,13 +6,13 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.5.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository (pesquisar pai do repositório) -->
 	</parent>
 	<groupId>org.jumbo</groupId>
 	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>backend</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot (Projeto de demonstração para Spring Boot)</description>
 
 	<properties>
 		<java.version>15</java.version>
@@ -49,25 +49,25 @@
 			</exclusions>
 		</dependency>
 		
-		<!-- Provides map projections -->
+		<!-- Provides map projections (Fornece projeções de mapas) -->
 		<dependency>
 			<groupId>org.geotools</groupId>
 			<artifactId>gt-epsg-hsql</artifactId>
 			<version>${geotools.version}</version>
 		</dependency>
-		<!-- Provides support for PostGIS. Note the different groupId -->
+		<!-- Provides support for PostGIS. Note the different groupId (Fornece suporte para PostGIS. Observe o groupId diferente) -->
 		<dependency>
 			<groupId>org.geotools.jdbc</groupId>
 			<artifactId>gt-jdbc-postgis</artifactId>
 			<version>${geotools.version}</version>
 		</dependency>
-		<!-- Provides support for shapefiles -->
+		<!-- Provides support for shapefiles (Fornece suporte para shapefiles) -->
 		<dependency>
 			<groupId>org.geotools</groupId>
 			<artifactId>gt-shapefile</artifactId>
 			<version>${geotools.version}</version>
 		</dependency>
-		<!-- Provides GUI components -->
+		<!-- Provides GUI components (Fornece componentes GUI) -->
 		<dependency>
 			<groupId>org.geotools</groupId>
 			<artifactId>gt-swing</artifactId>
@@ -78,9 +78,8 @@
 			<artifactId>gdal</artifactId>
 			<version>1.11.2</version>
 		</dependency>
-		
 	</dependencies>
-	
+
 	<repositories>
 		<repository>
 			<id>osgeo</id>
@@ -116,3 +115,4 @@
 	</build>
 
 </project>
+
