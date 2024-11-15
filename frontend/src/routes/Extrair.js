@@ -55,9 +55,7 @@ export default function Extrair() {
     });
   }, []);
 
-
   async function requestExtract() {
-
     await api.post('/extract_dbt_to_shp', dados, {
       responseType: "blob"
     })
@@ -135,3 +133,4 @@ export default function Extrair() {
     </div >
   )
 }
+
