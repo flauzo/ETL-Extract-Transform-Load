@@ -74,6 +74,7 @@ export default function Listar() {
               </tbody>
             </table>
           </div>
+  
           <div className='container-list-table'>
             <table>
               <tbody>
