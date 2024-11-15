@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-/* ----- global stuff ----- */
+/* ----- global stuff (coisas globais) ----- */
 
 html {
     background: linear-gradient(180deg, #0500FF 0%, #00A3FF 100%), #FFFFFF;
@@ -50,7 +50,7 @@ hr {
     width: 40px;
 }
 
-/* ----- extract ----- */
+/* ----- extract (extrair) ----- */
 
 .container-extract {
     /* width: 100vw; */
@@ -98,7 +98,7 @@ hr {
     width: 400px;
 }
 
-/* ----- insert ----- */
+/* ----- insert (inserir) ----- */
 
 .container-insert {
     /* width: 100vw; */
@@ -304,7 +304,7 @@ nav {
     padding-right: 3rem;
 }
 
-/* --- dropdown section start ----------------------------------------------------------------------*/
+/* --- dropdown section start (início da seção suspensa) ----------------------------------------------------------------------*/
 
 .selectionFields select {
     padding: 5px 8px;
@@ -329,9 +329,9 @@ select {
     appearance: none;
     text-overflow: '';
     text-indent: 0.01px;
-    /* Removes default arrow from firefox*/
+    /* Removes default arrow from firefox (Remove a seta padrão do firefox) */
     text-overflow: "";
-    /*Removes default arrow from firefox*/
+    /*Removes default arrow from firefox (Remove a seta padrão do firefox) */
 }
 
 .select-wrapper {
@@ -356,9 +356,9 @@ select {
     font-size: 20px;
 }
 
-/* --- dropdown section end ------------------------------------------------------------------------*/
+/* --- dropdown section end (fim da seção suspensa) ------------------------------------------------------------------------*/
 
-/* ----- list ----- */
+/* ----- list (lista) ----- */
 
 /* .container-list {
     height: 100vh;
@@ -414,7 +414,7 @@ select {
     filter: brightness(90%);
 }
 
-/* header-listar */
+/* header-listar (cabeçalho-listar) */
 
 .container-header {
     position: relative;
@@ -542,7 +542,7 @@ select {
     position: fixed;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
+    /* bring your own prefixes (traga seus próprios prefixos) */
     transform: translate(-50%, -50%);
 }
 
@@ -739,7 +739,7 @@ select {
     position: fixed;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
+    /* bring your own prefixes (traga seus próprios prefixos) */
     transform: translate(-50%, -50%);
 }
 
