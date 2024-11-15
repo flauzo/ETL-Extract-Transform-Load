@@ -1,36 +1,36 @@
 @REM ----------------------------------------------------------------------------
-@REM Licensed to the Apache Software Foundation (ASF) under one
-@REM or more contributor license agreements.  See the NOTICE file
-@REM distributed with this work for additional information
-@REM regarding copyright ownership.  The ASF licenses this file
-@REM to you under the Apache License, Version 2.0 (the
-@REM "License"); you may not use this file except in compliance
-@REM with the License.  You may obtain a copy of the License at
+@REM Licenciado para a Apache Software Foundation (ASF) sob um
+@REM ou mais acordos de licença de contribuidor. Veja o arquivo NOTICE
+@REM distribuído com este trabalho para informações adicionais
+@REM sobre propriedade de direitos autorais. A ASF licencia este arquivo
+@REM para você sob a Apache License, Versão 2.0 (a
+@REM "Licença"); você não pode usar este arquivo exceto em conformidade
+@REM com a Licença. Você pode obter uma cópia da Licença em
 @REM
 @REM    https://www.apache.org/licenses/LICENSE-2.0
 @REM
-@REM Unless required by applicable law or agreed to in writing,
-@REM software distributed under the License is distributed on an
-@REM "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-@REM KIND, either express or implied.  See the License for the
-@REM specific language governing permissions and limitations
-@REM under the License.
+@REM A menos que exigido pela lei aplicável ou acordado por escrito,
+@REM software distribuído sob a Licença é distribuído em uma
+@REM "COMO ESTÁ", SEM GARANTIAS OU CONDIÇÕES DE QUALQUER
+@REM TIPO, expressas ou implícitas. Veja a Licença para o
+@REM idioma específico que rege permissões e limitações
+@REM sob a Licença.
 @REM ----------------------------------------------------------------------------
 
 @REM ----------------------------------------------------------------------------
-@REM Maven Start Up Batch script
+@REM Script de inicialização em lote do Maven
 @REM
 @REM Required ENV vars:
 @REM JAVA_HOME - location of a JDK home dir
 @REM
-@REM Optional ENV vars
-@REM M2_HOME - location of maven2's installed home dir
-@REM MAVEN_BATCH_ECHO - set to 'on' to enable the echoing of the batch commands
-@REM MAVEN_BATCH_PAUSE - set to 'on' to wait for a keystroke before ending
-@REM MAVEN_OPTS - parameters passed to the Java VM when running Maven
-@REM     e.g. to debug Maven itself, use
+@REM Variáveis ​​ENV opcionais
+@REM M2_HOME - local do diretório home instalado do maven2
+@REM MAVEN_BATCH_ECHO - definido como 'on' para habilitar o eco dos comandos em lote
+@REM MAVEN_BATCH_PAUSE - definido como 'on' para aguardar um pressionamento de tecla antes de terminar
+@REM MAVEN_OPTS - parâmetros passados ​​para a VM Java ao executar o Maven
+@REM por exemplo, para depurar o próprio Maven, use
 @REM set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000
-@REM MAVEN_SKIP_RC - flag to disable loading of mavenrc files
+@REM MAVEN_SKIP_RC - sinalizador para desabilitar o carregamento de arquivos mavenrc
 @REM ----------------------------------------------------------------------------
 
 @REM Begin all REM lines with '@' in case MAVEN_BATCH_ECHO is 'on'
@@ -54,10 +54,10 @@ if exist "%HOME%\mavenrc_pre.cmd" call "%HOME%\mavenrc_pre.cmd"
 
 set ERROR_CODE=0
 
-@REM To isolate internal variables from possible post scripts, we use another setlocal
+@REM Para isolar variáveis ​​internas de possíveis post scripts, usamos outro setlocal
 @setlocal
 
-@REM ==== START VALIDATION ====
+@REM ==== INICIAR VALIDAÇÃO ====
 if not "%JAVA_HOME%" == "" goto OkJHome
 
 echo.
@@ -78,12 +78,12 @@ echo location of your Java installation. >&2
 echo.
 goto error
 
-@REM ==== END VALIDATION ====
+@REM ==== FIM DA VALIDAÇÃO ====
 
 :init
 
-@REM Find the project base dir, i.e. the directory that contains the folder ".mvn".
-@REM Fallback to current working directory if not found.
+@REM Encontre o diretório base do projeto, ou seja, o diretório que contém a pasta ".mvn".
+@REM Retorne ao diretório de trabalho atual se não for encontrado.
 
 set MAVEN_PROJECTBASEDIR=%MAVEN_BASEDIR%
 IF NOT "%MAVEN_PROJECTBASEDIR%"=="" goto endDetectBaseDir
@@ -126,8 +126,8 @@ FOR /F "tokens=1,2 delims==" %%A IN ("%MAVEN_PROJECTBASEDIR%\.mvn\wrapper\maven-
     IF "%%A"=="wrapperUrl" SET DOWNLOAD_URL=%%B
 )
 
-@REM Extension to allow automatically downloading the maven-wrapper.jar from Maven-central
-@REM This allows using the maven wrapper in projects that prohibit checking in binary data.
+@REM Extensão para permitir o download automático do maven-wrapper.jar do Maven-central
+@REM Isso permite usar o maven wrapper em projetos que proíbem a verificação de dados binários.
 if exist %WRAPPER_JAR% (
     if "%MVNW_VERBOSE%" == "true" (
         echo Found %WRAPPER_JAR%
@@ -152,10 +152,10 @@ if exist %WRAPPER_JAR% (
         echo Finished downloading %WRAPPER_JAR%
     )
 )
-@REM End of extension
+@REM Fim da extensão
 
-@REM Provide a "standardized" way to retrieve the CLI args that will
-@REM work with both Windows and non-Windows executions.
+@REM Fornece uma maneira "padronizada" de recuperar os argumentos CLI que irão
+@REM funcionar com execuções Windows e não Windows.
 set MAVEN_CMD_LINE_ARGS=%*
 
 %MAVEN_JAVA_EXE% %JVM_CONFIG_MAVEN_PROPS% %MAVEN_OPTS% %MAVEN_DEBUG_OPTS% -classpath %WRAPPER_JAR% "-Dmaven.multiModuleProjectDirectory=%MAVEN_PROJECTBASEDIR%" %WRAPPER_LAUNCHER% %MAVEN_CONFIG% %*
@@ -174,9 +174,10 @@ if exist "%HOME%\mavenrc_post.bat" call "%HOME%\mavenrc_post.bat"
 if exist "%HOME%\mavenrc_post.cmd" call "%HOME%\mavenrc_post.cmd"
 :skipRcPost
 
-@REM pause the script if MAVEN_BATCH_PAUSE is set to 'on'
+@REM pausa o script se MAVEN_BATCH_PAUSE estiver definido como 'on'
 if "%MAVEN_BATCH_PAUSE%" == "on" pause
 
 if "%MAVEN_TERMINATE_CMD%" == "on" exit %ERROR_CODE%
 
 exit /B %ERROR_CODE%
+
