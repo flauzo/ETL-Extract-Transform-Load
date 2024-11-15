@@ -73,7 +73,6 @@ export default function Inserir() {
       setProgressStatus("buffer")
       setTeste("Falha ao inserir os dados");
     }
-
   };
 
   useEffect(() => {
@@ -152,7 +151,5 @@ export default function Inserir() {
     </div>
 
   );
-
 }
-
 
