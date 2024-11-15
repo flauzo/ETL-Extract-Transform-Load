@@ -3,11 +3,11 @@ import { MapContainer, GeoJSON, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from 'leaflet';
 import HeaderNoSearch from '../sections/HeaderNoSearch';
+
 // import mapData from '../assets/geo.json';
 import api from '../services/api';
 import { LinearProgress } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
-
 
 export default function Visualizar() {
 
@@ -52,12 +52,10 @@ export default function Visualizar() {
                             setCenterJson(geojson.getBounds().getCenter());
                             setZoomJson(geojson.getBounds());
                             setLoading(false);
-
                         }))
             })
             ;
     }, []);
-
 
     const ColorLinearProgress = withStyles({
         colorPrimary: {
@@ -108,3 +106,4 @@ export default function Visualizar() {
         </div>
     );
 }
+
